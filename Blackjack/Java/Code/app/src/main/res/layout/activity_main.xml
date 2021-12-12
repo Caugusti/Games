@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mesa"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/appCont"
+        android:layout_width="48dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="#FAFFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textInputLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/usuarioCont"
+        android:layout_width="48dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="#FAFFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <ImageView
+        android:id="@+id/carta2app"
+        android:layout_width="80dp"
+        android:layout_height="107dp"
+        android:layout_marginTop="12dp"
+        android:contentDescription="TODO"
+        app:layout_constraintEnd_toStartOf="@+id/carta3usuario"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toEndOf="@+id/carta1usuario"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:srcCompat="@drawable/padrao" />
+
+    <ImageView
+        android:id="@+id/carta3app"
+        android:layout_width="80dp"
+        android:layout_height="107dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="70dp"
+        android:contentDescription="TODO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/carta2usuario"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:srcCompat="@drawable/padrao" />
+
+    <ImageView
+        android:id="@+id/carta1app"
+        android:layout_width="80dp"
+        android:layout_height="107dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:contentDescription="TODO"
+        app:layout_constraintEnd_toStartOf="@+id/carta2usuario"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:srcCompat="@drawable/padrao" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/app"
+        android:textColor="#FAFFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/carta3usuario" />
+
+    <TextView
+        android:id="@+id/txtBanco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/txtBanco"
+        android:textColor="#FAFFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <ImageView
+        android:id="@+id/carta3usuario"
+        android:layout_width="80dp"
+        android:layout_height="107dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="70dp"
+        android:contentDescription="TODO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/carta2usuario"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:srcCompat="@drawable/padrao" />
+
+    <ImageView
+        android:id="@+id/carta2usuario"
+        android:layout_width="80dp"
+        android:layout_height="107dp"
+        android:layout_marginTop="12dp"
+        android:contentDescription="TODO"
+        app:layout_constraintEnd_toStartOf="@+id/carta3usuario"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/carta1usuario"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:srcCompat="@drawable/padrao" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/blackjack"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/txtUsuario"
+        android:textColor="#FAFFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <ImageView
+        android:id="@+id/carta1usuario"
+        android:layout_width="80dp"
+        android:layout_height="107dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:contentDescription="TODO"
+        app:layout_constraintEnd_toStartOf="@+id/carta2usuario"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:srcCompat="@drawable/padrao" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="370dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:textColorHint="#FFFFFF"
+        app:boxBackgroundMode="none"
+        app:hintTextColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/carta2app">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtAposta"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:hint="@string/aposta1"
+            android:inputType="numberDecimal"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#FAFFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textSize="16sp"
+            tools:ignore="TouchTargetSizeCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/txtResultado"
+        android:layout_width="409dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Faça sua aposta!"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
+
+    <Button
+        android:id="@+id/novoJogo"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:onClick="novoJogo"
+        android:text="@string/novo_jogo"
+        app:backgroundTint="#1F5021"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/apostar" />
+
+    <Button
+        android:id="@+id/apostar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="50dp"
+        android:onClick="apostar"
+        android:text="@string/apostar"
+        android:textColor="@color/white"
+        app:backgroundTint="#1F5021"
+        app:layout_constraintEnd_toStartOf="@+id/outraCarta"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtResultado" />
+
+    <Button
+        android:id="@+id/outraCarta"
+        android:layout_width="65dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="outraCarta"
+        android:text="Sim"
+        app:backgroundTint="#1F5021"
+        app:layout_constraintEnd_toStartOf="@+id/button5"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="65dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="40dp"
+        android:onClick="continuarJogo"
+        android:text="Não"
+        app:backgroundTint="#1F5021"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="48dp"
+        android:gravity="center"
+        android:text="Deseja outra carta?"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtResultado" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

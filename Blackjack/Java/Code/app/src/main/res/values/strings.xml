@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Prova01</string>
+    <string name="blackjack">Blackjack</string>
+    <string name="txtBanco">Banco: U$ 0.00</string>
+    <string name="app">App :</string>
+    <string name="txtUsuario">Usuário :</string>
+    <string name="apostar">Apostar</string>
+    <string name="outra_carta">Outra Carta</string>
+    <string name="txtResultado">Faça sua aposta!</string>
+    <string name="jogar_novamente">Jogar novamente</string>
+    <string name="aposta1">Qual será sua aposta? Ex. 20.00</string>
+    <string name="novo_jogo">Novo Jogo</string>
+</resources>
